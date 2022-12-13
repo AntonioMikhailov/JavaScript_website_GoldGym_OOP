@@ -1,0 +1,81 @@
+.con-one {
+	padding:60px 0px 0px 0px;
+}
+.con-one__row {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.con-one__title {
+	text-align:center;
+}
+ 
+.con-one__subtitle {
+	margin:40px 0px 0px 0px;
+	font-family:h;
+	text-transform:uppercase;
+	text-align:center;
+}
+.con-one__text {
+	margin:20px 0px 50px 0px;
+	text-align:center;
+	line-height:200%;
+}
+.con-one__text span {
+	color:#FD3C3D;
+}
+.con-one__map {
+	width:100%;
+}
+.con-one__map iframe {
+	width:100%;
+	height:600px;
+	border:0px solid rgb(122,122,122);
+}
+@media screen and (max-width:768px) {
+	.con-one__subtitle {
+	margin:20px 0px 0px 0px;
+	font-size:14px;
+}
+.con-one__text {
+	margin:20px 0px 50px 0px;
+	font-size:16px;
+	line-height:200%;
+}
+}
+@media screen and (max-width:400px) {
+	.con-one__text {
+	margin:20px 0px 30px 0px;
+	font-size:16px;
+	line-height:150%;
+}
+}
+.con-two____row {
+}
+.con-two__title {
+	text-align:center;
+}
+.con-two__subtitle {
+	max-width:900px;
+	margin:0 auto;
+	margin-top:60px;
+	font-family:h;
+	text-transform:uppercase;
+	text-align:center;
+}
+form.con-two__form {
+	display:block;
+	margin:0 auto;
+	margin-top:40px;
+	max-width:700px;
+}
+.con-two__textarea::placeholder,.con-two__input::placeholder {
+	color:#000;
+}
+@media screen and (max-width:768px) {
+	.con-two__subtitle {
+	margin-top:40px;
+	font-size:14px;
+}
+}
+

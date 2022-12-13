@@ -1,0 +1,147 @@
+
+.chat-popup {
+	position:fixed;
+
+ bottom:18px;
+	right:40px;
+}
+.chat-ask {
+	position:absolute;
+
+ top:-125px;
+	right:20px;
+	transition:all 0.3s ease .0s;
+}
+.chat-ask__cancel {
+	position:relative;
+	position:absolute;
+	bottom:128px;
+	right:20px;
+	cursor:pointer;
+	opacity:1;
+	visibility:visible;
+	transition:all 0.3s ease .0s;
+}
+.chat-ask-hide__active {
+	opacity:0;
+	visibility:hidden;
+}
+.chat-ask__popUpIcon {
+	position:absolute;
+	top:-40px;
+	right:30px;
+	cursor:pointer;
+}
+.chat-ask__popUpIcon:hover {
+	animation-duration:0.3s;
+	animation-name:anime;
+	animation-iteration-count:infinite;
+}
+@keyframes anime {
+	0%,100% {
+	transform:translateX(0);
+}
+50% {
+
+ transform:rotate(15deg);
+}
+}
+.formChat {
+	position:fixed;
+	width:320px;
+	height:500px;
+	bottom:22px;
+	right:60px;
+	border-radius:30px;
+	max-height:calc(100% - 22px);
+	overflow:hidden;
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.3s ease .0s;
+	z-index:50;
+}
+.formChat__active {
+	opacity:1;
+	visibility:visible;
+}
+.formChat__row {
+
+ bottom:40px;
+	background-color:#fff;
+	height:100%;
+	overflow:auto;
+
+}
+.formChat__header {
+	background-color:$violet;
+	height:50px;
+	border-radius:12px 12px 0px 0px;
+	text-align:center;
+	line-height:50px;
+}
+.formChat__icon img {
+	margin:0 auto;
+	margin-top:20px;
+}
+.formChat__text {
+	text-align:center;
+	color:$black;
+	padding:0px 20px 0px 20px;
+	margin:20px 0px 20px 0px;
+	font-size:14px;
+}
+.formChat__text span {
+	color:$red;
+}
+.formChat__inputName {
+	color:$black;
+	text-align:center;
+	margin:0px 0px 10px 0px;
+}
+.formChat__inputName span {
+	color:$red;
+}
+.formChat_input {
+	display:block;
+	margin:0 auto;
+	width:250px;
+	height:35px;
+	border-radius:5px;
+	border:1px solid $violet;
+}
+.formChat_input:focus {
+	border:1px solid $red;
+}
+.formChat__inputEmail {
+	color:$black;
+	text-align:center;
+	margin:20px 0px 10px 0px;
+}
+.formChat__inputEmail span {
+	color:$red;
+}
+.formChat__button {
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	height:35px;
+	width:250px;
+	font-size:12px;
+	border-radius:5px;
+}
+.formChat__button:hover {
+	border:1px solid $black;
+}
+.btn-red {
+}
+.formChat__cancelIcon {
+	position:absolute;
+	top:5.5px;
+	right:10px;
+	cursor:pointer;
+}
+@media screen and (max-width:600px) {
+	.chat-popup {
+	display:none;
+}
+}
